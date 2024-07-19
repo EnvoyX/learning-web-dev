@@ -13,3 +13,4 @@ console.log(multipliedResult);
 console.log(reducedResult);
 
 console.log("Hello World");
+console.log("Hello new commit changes");
