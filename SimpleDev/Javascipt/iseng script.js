@@ -2,7 +2,7 @@ let x = 2;
 const y = 10;
 const multiplier = 10;
 const reduction = 2;
- 
+
 
 result = x + y;
 multipliedResult = result * multiplier;
