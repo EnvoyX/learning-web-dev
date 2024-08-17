@@ -6,9 +6,120 @@
     <title>HTML Table Merging</title>
   </head>
   <body>
-    <table>
-      <thead></thead>
-      <tbody></tbody>
+    <h1>Learning Table Merging HTML</h1>
+    <hr />
+    <a href="./HTML DASAR Learning PROGRESS.html">Back to Main Page</a>
+    <hr />
+    <h3>Without colspan and rowspan</h3>
+    <hr />
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+      <tr>
+        <td>1,1</td>
+        <td>1,2</td>
+        <td>1,3</td>
+      </tr>
+      <tr>
+        <td>2,1</td>
+        <td>2,2</td>
+        <td>2,3</td>
+      </tr>
+      <tr>
+        <td>3,1</td>
+        <td>3,2</td>
+        <td>3,3</td>
+      </tr>
+    </table>
+    <hr />
+    <h3>With colspan dan rowspan</h3>
+    <table border="1px" cellpadding="5px" cellspacing="0px">
+      <tr>
+        <td rowspan="3">ROWSPAN 3</td>
+        <td colspan="2">COLSPAN 2</td>
+      </tr>
+      <tr>
+        <td>2,2</td>
+        <td>2,3</td>
+      </tr>
+      <tr>
+        <td>3,2</td>
+        <td>3,3</td>
+      </tr>
+    </table>
+    <hr />
+    <h3>Latihan</h3>
+    <table border="1px" cellpadding="10px" cellspacing="0px">
+      <tr>
+        <td>1,1</td>
+        <td>1,2</td>
+        <td>1,3</td>
+        <td>1,4</td>
+      </tr>
+      <tr>
+        <td>2,1</td>
+        <td rowspan="2" colspan="2"></td>
+        <td>2,4</td>
+      </tr>
+      <tr>
+        <td>3,1</td>
+        <td>3,4</td>
+      </tr>
+      <tr>
+        <td>4,1</td>
+        <td>4,2</td>
+        <td>4,3</td>
+        <td>4,4</td>
+      </tr>
+    </table>
+    <hr />
+    <h3>Latihan 3</h3>
+    <table border="1px" cellpadding="10px" cellspacing="0px">
+      <tr>
+        <td>1,1</td>
+        <td>1,2</td>
+        <td>1,3</td>
+        <td>1,4</td>
+        <td>1,5</td>
+      </tr>
+      <tr>
+        <td>2,1</td>
+        <td rowspan="2" colspan="3"></td>
+        <td>2,5</td>
+      </tr>
+      <tr>
+        <td>3,1</td>
+        <td>3,5</td>
+      </tr>
+      <tr>
+        <td>4,1</td>
+        <td>4,2</td>
+        <td>4,3</td>
+        <td>4,4</td>
+        <td>4,5</td>
+      </tr>
+    </table>
+    <hr />
+    <h3>Latihan 4</h3>
+    <table border="1px" cellpadding="10px" cellspacing="0px">
+      <tr>
+        <td>1,1</td>
+        <td rowspan="3" colspan="3"></td>
+        <td>1,5</td>
+      </tr>
+      <tr>
+        <td>2,1</td>
+        <td>2,5</td>
+      </tr>
+      <tr>
+        <td>3,1</td>
+        <td>3,5</td>
+      </tr>
+      <tr>
+        <td>4,1</td>
+        <td>4,2</td>
+        <td>4,3</td>
+        <td>4,4</td>
+        <td>4,5</td>
+      </tr>
     </table>
   </body>
 </html>
