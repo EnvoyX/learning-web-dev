@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Form Basic</title>
   </head>
-  <h1>Learning HTML Form Basic</h1>
-  <hr />
-  <a href="./HTML DASAR Learning PROGRESS.html">Back to main menu</a>
-  <hr />
-  <body></body>
+  <body>
+    <h1>Learning HTML Form Basic</h1>
+    <hr />
+    <a href="./HTML DASAR Learning PROGRESS.html">Back to main menu</a>
+    <hr />
+    <label for="username">Username: </label>
+    <input type="text" id="username" />
+    <br />
+    <label for="password">Password: </label>
+    <input type="password" id="password" />
+    <br />
+    <!-- Untuk menghindari terpilihnya dua pilihan maka diperlukan tag nama untuk menyatukan nya sebagai grup -->
+    <input type="radio" id="lakilaki" name="gender" />
+    <label for="lakilaki">Pria</label>
+    <input type="radio" id="perempuan" name="gender" />
+    <label for="perempuan">Perempuan</label>
+    <br />
+    <input type="checkbox" id="ngoding" /> <label for="ngoding">Ngoding</label>
+    <input type="checkbox" id="videogames" />
+    <label for="videogames">Play videogames</label>
+    <input type="checkbox" id="anime" />
+    <label for="anime">Watching Anime</label>
+    <br />
+    <!-- Kalau submit tag yang lebih sesuai adalah tag button -->
+    <!-- <input type="submit" value="Submit!" /> -->
+    <button type="submit">Submit!</button>
+  </body>
 </html>
