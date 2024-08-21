@@ -17,19 +17,79 @@
     <input type="password" id="password" />
     <br />
     <!-- Untuk menghindari terpilihnya dua pilihan maka diperlukan tag nama untuk menyatukan nya sebagai grup -->
+    <!-- Single Choice -->
     <input type="radio" id="lakilaki" name="gender" />
     <label for="lakilaki">Pria</label>
     <input type="radio" id="perempuan" name="gender" />
     <label for="perempuan">Perempuan</label>
-    <br />
+    <hr />
+    <!-- Multiple Choice -->
+    <h3>Multiple Choice</h3>
     <input type="checkbox" id="ngoding" /> <label for="ngoding">Ngoding</label>
+    <br />
     <input type="checkbox" id="videogames" />
     <label for="videogames">Play videogames</label>
+    <br />
     <input type="checkbox" id="anime" />
     <label for="anime">Watching Anime</label>
-    <br />
+    <hr />
+    <h3>Pilih Universitas Kalian!</h3>
+    <select name="" id="">
+      <option value="">Institut Teknologi Bandung</option>
+      <option value="">Universitas Gadjah Mada</option>
+      <option value="">Universitas Indonesia</option>
+    </select>
+    <hr />
+    <h3>Berikan Komen kalian!</h3>
+    <textarea name="" id=""></textarea>
+    <hr />
     <!-- Kalau submit tag yang lebih sesuai adalah tag button -->
     <!-- <input type="submit" value="Submit!" /> -->
     <button type="submit">Submit!</button>
+    <hr />
+    <h3>Excercise</h3>
+    <table border="1px" cellpadding="5px" cellspacing="0">
+      <tr>
+        <td><label for="username2">Username: </label></td>
+        <td><input type="text" id="username2" /></td>
+      </tr>
+      <tr>
+        <td><label for="password2">Password: </label></td>
+        <td><input type="password" id="password2" /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="radio">Radio 1</label>
+          <input type="radio" id="radio" name="singlechoice" />
+          <label for="radio2">Radio 2</label>
+          <input type="radio" id="radio2" name="singlechoice" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="checkbox1">Checkbox 1</label>
+          <input type="checkbox" id="checkbox1" />
+          <label for="checkbox2">Checkbox 2</label>
+          <input type="checkbox" id="checkbox1" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="dropdownmenu">Combo Box: </label></td>
+        <td>
+          <select name="" id="dropdownmenu">
+            <option value="">Institut Teknologi Bandung</option>
+            <option value="">Universitas Gadjah Mada</option>
+            <option value="">Universitas Indonesia</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="textarea">Comment: / Text Area: </label></td>
+        <td><textarea name="" id="textarea"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="submit">Submit!</button></td>
+      </tr>
+    </table>
   </body>
 </html>
