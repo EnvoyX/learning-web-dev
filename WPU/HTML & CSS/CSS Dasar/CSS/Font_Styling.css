@@ -1,0 +1,26 @@
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: lighter;
+  font-variant: small-caps;
+  font-style: normal;
+}
+
+p {
+  /* font-family: Georgia, serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#italic {
+  font-style: italic;
+  font-weight: lighter;
+}
+#italicheader {
+  font-style: italic;
+  font-weight: lighter;
+}

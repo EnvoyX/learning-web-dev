@@ -1,0 +1,26 @@
+html {
+  background-image: url(../image/moroccan-flower-dark.png);
+}
+
+h1 {
+  background-color: aqua;
+}
+
+h2 {
+  background-image: url(../image/moroccan-flower.png);
+  background-repeat: repeat-x;
+}
+
+p {
+  background-image: url(../image/more-leaves.png);
+}
+
+#secret {
+  background-image: url(../image/moroccan-flower.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#acrh {
+  background: lightblue url(../image/moroccan-flower-dark.png) center no-repeat;
+}

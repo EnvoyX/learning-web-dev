@@ -1,0 +1,37 @@
+/* Pemilihan styling warna dengan berbagai cara */
+h1 {
+  font-size: 60px;
+  color: lightgreen;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 40px;
+  color: #7603ec;
+  text-decoration: line-through;
+  text-transform: lowercase;
+}
+p {
+  color: rgb(11, 225, 101);
+  text-align: justify;
+  /* justify itu rata kiri dan kanan */
+  text-indent: 50px;
+  word-spacing: 10px;
+  letter-spacing: 9px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: gold;
+  text-transform: uppercase;
+}
+
+#cssed {
+  color: crimson;
+  font-size: 20px;
+  word-spacing: 25px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-indent: 20px;
+  text-transform: uppercase;
+}
