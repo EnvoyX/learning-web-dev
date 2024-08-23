@@ -1,0 +1,51 @@
+.hello {
+  /* ukuran px adalah ukuran absolute */
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.mc {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
+
+.andi {
+  background-color: blueviolet;
+  width: 100%;
+  height: 100%;
+}
+
+.satu {
+  background-color: violet;
+  height: 200px;
+  width: 200px;
+}
+
+.dua {
+  background-color: crimson;
+  /* jika dimensi nya persen maka akan mengikuti ukuran parent tag nya */
+  width: 80%;
+}
+
+/* contoh kasus overflow untuk mitigasi konten yang berlebih */
+.paragraph {
+  background-color: darkred;
+  height: 200px;
+  width: 200px;
+  overflow: auto;
+}
+
+.paragraph3 {
+  background-color: chartreuse;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+.paragraph2 {
+  background-color: darkturquoise;
+  height: 200px;
+  width: 200px;
+  overflow: visible;
+}

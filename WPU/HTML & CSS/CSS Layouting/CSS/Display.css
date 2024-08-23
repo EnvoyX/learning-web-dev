@@ -1,0 +1,47 @@
+a {
+  /* dsplay of a-tag default is inline  */
+  background-color: aquamarine;
+}
+
+div.nav a.curriculum {
+  background-color: aquamarine;
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.nav {
+  background-color: violet;
+}
+
+.main {
+  background-color: lightblue;
+  width: 600px;
+}
+
+.main span {
+  background-color: crimson;
+}
+
+.main h3 {
+  background-color: coral;
+}
+
+.nav li {
+  display: inline;
+}
+
+.footer {
+  background-color: yellow;
+  display: inline-block;
+}
+
+.header h1 {
+  background-color: darksalmon;
+  display: inline-block;
+}
