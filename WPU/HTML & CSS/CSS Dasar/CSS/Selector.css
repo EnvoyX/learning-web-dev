@@ -1,0 +1,36 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+h1,
+h2 {
+  color: green;
+}
+
+ul li a {
+  color: red;
+}
+
+ol li a {
+  color: purple;
+}
+
+a {
+  color: aqua;
+}
+
+#p1 {
+  color: lightblue;
+}
+
+.p2 {
+  color: crimson;
+}
+
+.cetak-tebal {
+  font-weight: bold;
+}
+
+p.cetak-tebal {
+  font-size: 35px;
+}

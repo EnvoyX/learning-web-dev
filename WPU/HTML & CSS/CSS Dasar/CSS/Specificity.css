@@ -1,0 +1,33 @@
+/* id #p1 akan terpilih karena lebih spesifik dibandingkan  */
+/* tag p saja */
+#p1 {
+  color: crimson;
+}
+
+p {
+  color: goldenrod;
+}
+
+ul#sarapan li.favorit {
+  color: lightblue;
+}
+
+ul#sarapan li.junkfood {
+  color: seagreen;
+}
+
+ul#sarapan li.bubur {
+  color: orange;
+}
+
+ul#sarapan li {
+  color: violet;
+}
+
+.favorit {
+  color: cadetblue;
+}
+
+li {
+  color: aquamarine;
+}

@@ -1,0 +1,19 @@
+body {
+  color: lightblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: lighter;
+}
+
+/* untuk tag secara default tidak akan menginherit attribut color */
+/* maka attribut color harus di inherit secara manual di CSS */
+a {
+  color: inherit;
+}

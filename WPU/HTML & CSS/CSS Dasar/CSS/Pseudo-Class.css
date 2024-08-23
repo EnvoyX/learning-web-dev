@@ -1,0 +1,47 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.hello:link {
+  color: gold;
+}
+
+.hello:hover {
+  color: aquamarine;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hello:active {
+  color: purple;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.hello:visited {
+  color: crimson;
+}
+
+ul.list li:nth-child(even) a {
+  color: pink;
+}
+
+ul.list1 li:first-child a {
+  color: greenyellow;
+}
+
+ul.list2 li:last-child a {
+  color: brown;
+}
+
+ul.list3 li:nth-child(3n) a {
+  color: lightblue;
+}
+
+p:first-of-type {
+  color: blueviolet;
+}
+
+p:last-of-type {
+  color: cyan;
+}
