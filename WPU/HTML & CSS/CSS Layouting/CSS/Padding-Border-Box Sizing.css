@@ -1,0 +1,30 @@
+div {
+  width: 600px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.ori {
+  background-color: coral;
+  border: 5px solid black;
+  overflow: auto;
+  margin: 25px auto;
+  padding: 20px;
+}
+
+.satu {
+  background-color: lightblue;
+  border: 10px dashed red;
+  margin: 25px auto;
+  padding: 25px;
+}
+
+.dua {
+  background-color: crimson;
+  border-top: 5px solid greenyellow;
+  border-left: 10px dashed yellow;
+  border-right: 7px dashed blueviolet;
+  border-bottom: 8px double black;
+  margin: 25px auto;
+  padding: 30px;
+}

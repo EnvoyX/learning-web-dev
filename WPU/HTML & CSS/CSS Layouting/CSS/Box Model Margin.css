@@ -50,3 +50,60 @@ div.six {
   width: 50px;
   height: 50px;
 }
+
+.seven{
+background-color: brown;
+width: 200px;
+height: 200px;
+
+
+}
+
+.eight{
+background-color: darkorchid;
+width: 100px;
+height: 100px;
+margin-top: -100px;
+margin-left: 100px;
+}
+
+.nine{
+background-color: deepskyblue;
+width: 50px;
+height: 50px;
+margin-top: -50px;
+margin-left: 150px;
+}
+
+.ten{
+background-color: tomato;
+width: 200px;
+height: 200px;
+margin: auto;
+
+}
+
+.eleven{
+background-color: yellowgreen;
+width: 100px;
+height: 100px;
+margin: 25px auto ;
+/* TOP-DOWNpx LEFT-RIGHT auto */
+}
+
+.twelve{
+background-color: firebrick;
+width: 50px;
+height: 50px;
+margin: 25px auto 25px;
+/* TOPpx LEFT-RIGHT auto DOWNpx */
+}
+
+
+.thirteen{
+  background-color: seagreen;
+  width: 25px;
+  height: 25px;
+  margin: 25px 25px 50px 50px;
+  /* TOPpx DOWNpx RIGHTpx LEFTpx */
+}
