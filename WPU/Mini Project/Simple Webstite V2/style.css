@@ -1,0 +1,209 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 16px/28px 'Trebuchet MS', sans-serif;
+  background-color: #eaeaea;
+  color: #333333;
+  background-image: url(./assset/D_1920×1080\ pix_03.jpg);
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  border: 3px solid slateblue;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header .judul {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 12px;
+}
+
+.header .nav a {
+  color: chocolate;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.header .nav a:hover {
+  background-color: lightsalmon;
+  color: slateblue;
+}
+
+.hero-img {
+  padding: 0px;
+  height: 350px;
+  background-size: cover;
+  background-image: url(./assset/574191.jpg);
+  background-position: 0px -100px;
+  border-top: 5px solid lightblue;
+  border-bottom: 5px solid crimson;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content .author a {
+  color: sienna;
+}
+
+.content .author {
+  font-size: 10px;
+  margin-top: -4px;
+}
+
+.content p {
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.footer {
+  background-color: #333333;
+  padding: 13px;
+}
+
+.footer .copyright {
+  color: steelblue;
+  text-align: center;
+  font-size: 12px;
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  width: 600px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+
+  /* BIsa gunakan properti overflow untuk 
+  membersihkan float*/
+
+  /* overflow: auto; */
+}
+
+img {
+  float: right;
+  padding: 2px;
+}
+
+.container p {
+  font-weight: normal;
+  padding: 0px;
+}
+
+.container h1 {
+  font-size: 25px;
+  padding: 0px;
+  text-align: center;
+  margin-top: -2px;
+}
+
+.container h3 {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/* Bisa gunakan div kosong dengan class 
+clear untuk membersihkan float  */
+.clear {
+  clear: right;
+}

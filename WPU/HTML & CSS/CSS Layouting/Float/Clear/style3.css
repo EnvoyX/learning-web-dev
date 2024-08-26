@@ -1,0 +1,47 @@
+.container {
+  width: 800px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.kiri {
+  box-sizing: border-box;
+  height: 500px;
+  width: 150px;
+  background-color: lightblue;
+  float: left;
+  padding: 10px;
+}
+
+.tengah {
+  box-sizing: border-box;
+  height: 500px;
+  width: 500px;
+  background-color: lightcoral;
+  float: left;
+  padding: 15px;
+}
+
+.kanan {
+  box-sizing: border-box;
+  height: 500px;
+  width: 150px;
+  background-color: darkviolet;
+  float: right;
+  padding: 20px;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
