@@ -1,0 +1,32 @@
+body {
+  height: 2000px;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.kotak-popup {
+  top: 100px;
+  left: 100px;
+  right: 100px;
+  bottom: 100px;
+  position: fixed;
+  opacity: 0.5;
+  background-color: salmon;
+}
+
+.kotak-popup .close {
+  width: 30px;
+  height: 30px;
+  background-color: blueviolet;
+  position: absolute;
+  border: 5px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: -15px;
+  right: -15px;
+}

@@ -1,0 +1,55 @@
+div {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+body {
+  height: 2000px;
+}
+
+.container {
+  width: 600px;
+  height: 650px;
+  border: 10px solid coral;
+  position: relative;
+}
+
+.header {
+  background-color: salmon;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+}
+
+.satu {
+  background-color: crimson;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* Jika ingin kotak ato suatu elemen berada pada suatu container */
+  /* maka container tersebut selaku parent dari element yang didalam nya */
+  /* harus bersifat non static juga */
+
+  /* Jikalau container nya tidak static maka elemen yang position absolute */
+  /* akan mencari parent terderkat dengan sifat non-static (dalam kasus ini tag body) */
+  /* Dan position absolute tidak akan meninggalkan ruangan ato space yang sebelumnya ditempati */
+}
+
+.dua {
+  background-color: lightblue;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.tiga {
+  background-color: gold;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  /* Position relative akan menaikin satu dimensi suatu elemen tetapi ruangan ato space yang sebelumnya */
+  /* ditempati masih dianggap ada */
+}
