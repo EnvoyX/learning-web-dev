@@ -31,6 +31,7 @@ img.yorha-a2 {
   height: 250px;
   object-fit: contain;
 }
+
 .container {
   width: 1000px;
   margin: auto;
@@ -95,6 +96,24 @@ img.yorha-a2 {
   -o-transition: 0.5s;
 }
 
+.overlay a.close {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -20px;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  line-height: 0px;
+  border: 1px solid white;
+  border-radius: 40%;
+  opacity: 0;
+  -webkit-border-radius: 40%;
+  -moz-border-radius: 40%;
+  -ms-border-radius: 40%;
+  -o-border-radius: 40%;
+}
+
 .overlay:target {
   width: auto;
   height: auto;
@@ -114,21 +133,12 @@ img.yorha-a2 {
   -webkit-animation: ZoomandFade 0.5s;
 }
 
-.overlay .close {
-  position: absolute;
+.overlay:target a.close {
   top: 30px;
   left: 50%;
-  margin-left: 0px;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 40%;
-  -webkit-border-radius: 40%;
-  -moz-border-radius: 40%;
-  -ms-border-radius: 40%;
-  -o-border-radius: 40%;
-  line-height: 0px;
+  opacity: 1;
+  animation: slideDownFade 0.5 0.5 forwards;
+  -webkit-animation: slideDownFade 0.5 0.5 forwards;
 }
 
 /* Animasi */
@@ -151,6 +161,16 @@ img.yorha-a2 {
   }
 }
 
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -40px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 .cf:before,
 .cf:after {
   content: ' '; /* 1 */
