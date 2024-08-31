@@ -133,12 +133,45 @@ img.yorha-a2 {
   -webkit-animation: ZoomandFade 0.5s;
 }
 
+.overlay:target .next {
+  animation: fadeAja 0.5 0.5 forwards;
+  -webkit-animation: fadeAja 0.5 0.5 forwards;
+  opacity: 1;
+}
+.overlay:target .prev {
+  animation: fadeAja 0.5 0.5 forwards;
+  -webkit-animation: fadeAja 0.5 0.5 forwards;
+  opacity: 1;
+}
+
 .overlay:target a.close {
   top: 30px;
   left: 50%;
   opacity: 1;
   animation: slideDownFade 0.5 0.5 forwards;
   -webkit-animation: slideDownFade 0.5 0.5 forwards;
+}
+
+/* Navigation */
+.next,
+.prev {
+  position: absolute;
+  width: 57px;
+  height: 93px;
+  object-fit: contain;
+  background-image: url(./asset/img/misc/pngwing.comright.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  top: 40%;
+  left: 75%;
+  opacity: 0;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+.prev {
+  background-image: url(./asset/img/misc/pngwingleft.com.png);
+  left: 20%;
 }
 
 /* Animasi */
@@ -169,6 +202,15 @@ img.yorha-a2 {
   100% {
     opacity: 1;
     margin-top: 0;
+  }
+}
+
+@keyframes fadeAja {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .cf:before,
