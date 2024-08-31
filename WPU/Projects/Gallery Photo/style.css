@@ -1,0 +1,162 @@
+/* Font */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(./asset/fonts/BebasNeue-Regular.woff) format('woff');
+}
+
+/* Main Style */
+body {
+  background-color: #eeeeee;
+  font: 18px/36px 'BebasNeue', 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  margin: 50px auto;
+  text-shadow: 1px 1px 1px white;
+}
+
+a {
+  text-decoration: none;
+}
+img.yorha-2b {
+  width: 210px;
+  height: 250px;
+  object-fit: contain;
+}
+
+img.yorha-a2 {
+  width: 210px;
+  height: 250px;
+  object-fit: contain;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.gallery li {
+  margin: 0px 10px;
+  padding: 0px;
+  border: 2px solid #666666;
+  float: left;
+  width: 210px;
+  height: 300px;
+}
+
+.gallery li img {
+  display: block;
+  max-height: 100%;
+}
+
+.gallery li span {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  background-color: #666666;
+  color: white;
+}
+
+.gallery li:hover {
+  border: 2px solid black;
+}
+
+.gallery li a:hover span {
+  background-color: black;
+  color: white;
+}
+
+/* Overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  padding: 60px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+  max-height: 100%;
+  margin: auto;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+}
+
+.overlay:target img {
+  animation: ZoomandFade 0.5s;
+  -webkit-animation: ZoomandFade 0.5s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: 0px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 40%;
+  -webkit-border-radius: 40%;
+  -moz-border-radius: 40%;
+  -ms-border-radius: 40%;
+  -o-border-radius: 40%;
+  line-height: 0px;
+}
+
+/* Animasi */
+@keyframes ZoomandFade {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: ' '; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
