@@ -1,0 +1,112 @@
+.one {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  float: left;
+  background-color: salmon;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.two {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  float: left;
+  background-color: lightblue;
+  border-radius: 25%;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  -o-border-radius: 25%;
+}
+
+.three {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  float: left;
+  background-color: lightseagreen;
+}
+
+.four {
+  width: 300px;
+  height: 300px;
+  line-height: 550px;
+  text-align: center;
+  background-image: url(../asset/happy-birthday-navia-v0-lq3k3i587yid1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 50% 50% 50%;
+  float: left;
+  background-color: lightgreen;
+  -webkit-border-radius: 0 50% 50% 50%;
+  -moz-border-radius: 0 50% 50% 50%;
+  -ms-border-radius: 0 50% 50% 50%;
+  -o-border-radius: 0 50% 50% 50%;
+}
+
+.five {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  overflow: hidden;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  float: left;
+  background-color: sandybrown;
+}
+
+.five img {
+  width: 300px;
+  height: auto;
+}
+
+.kotak {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  float: left;
+}
+.kotak1 {
+  border: 8px solid #ccc;
+  border-radius: 10px;
+}
+
+.kotak2 {
+  border: 10px solid red;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.kotak3 {
+  border: 10px solid green;
+  border-radius: 100px;
+}
+
+.kotak4 {
+  height: 70px;
+  border: 10px solid blue;
+  border-radius: 100px 100px 0 0;
+}
+
+.kotak5 {
+  margin-top: 110px;
+  height: 70px;
+  border: 10px solid blue;
+  border-radius: 0 0 100px 100px;
+}
+
+.kotak6 {
+  border: 10px solid orange;
+  border-radius: 20px 100px 100px 20px;
+}
