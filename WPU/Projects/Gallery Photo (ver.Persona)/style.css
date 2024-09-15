@@ -1,18 +1,18 @@
 /* Font */
 @font-face {
-  font-family: "BebasNeue";
-  src: url(./asset/fonts/BebasNeue-Regular.woff) format("woff");
+  font-family: 'BebasNeue';
+  src: url(./asset/fonts/BebasNeue-Regular.woff) format('woff');
 }
 
 /* Main Style */
 body {
   background-color: #dddddd;
-  font: 18px/36px "BebasNeue", "Trebuchet MS", arial, sans-serif;
+  font: 18px/36px 'BebasNeue', 'Trebuchet MS', arial, sans-serif;
 }
 
 h1.title {
   font-size: 85px;
-  font-family: "BebasNeue";
+  font-family: 'BebasNeue';
   font-weight: bold;
   text-align: center;
   margin: 50px auto;
@@ -50,7 +50,7 @@ h1.title {
 
 .gallery li a {
   text-decoration: none;
-  font-family: "BebasNeue";
+  font-family: 'BebasNeue';
   text-align: center;
   line-height: 160px;
   color: black;
@@ -99,6 +99,71 @@ h1.title {
   height: auto;
 }
 
+/* Overlay */
+.overlay {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  padding: 100px 0px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: 450px;
+  width: 50px;
+  height: 50px;
+}
+
+.overlay .close .closebutton {
+  color: goldenrod;
+}
+
+li .overlay img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 900px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+li .overlay img#fuukaimage {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+li .overlay:target img {
+  animation: ZoomandFade 0.8s;
+  -webkit-animation: ZoomandFade 0.8s;
+}
+
+li .overlay:target a {
+  animation: ZoomandFade 0.8s;
+  -webkit-animation: ZoomandFade 0.8s;
+}
+
 /* Correction per character */
 #makoto {
   width: 200px;
@@ -136,9 +201,30 @@ h1.title {
   width: 190px;
 }
 
+/* animasi */
+@keyframes ZoomandFade {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .cf:before,
 .cf:after {
-  content: " "; /* 1 */
+  content: ' '; /* 1 */
   display: table; /* 2 */
 }
 
