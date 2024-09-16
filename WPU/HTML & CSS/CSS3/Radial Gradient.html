@@ -4,6 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radial Gradient</title>
+    <style>
+      div {
+        width: 600px;
+        height: 300px;
+        margin: 50px auto;
+        background-image: radial-gradient(circle, red, blue, green);
+      }
+      .satu {
+        background-image: radial-gradient(ellipse, red, blue, green);
+      }
+      .dua {
+        background-image: radial-gradient(
+          circle farthest-side,
+          lightblue,
+          violet
+        );
+      }
+      .tiga {
+        background-image: radial-gradient(
+          circle closest-side,
+          coral,
+          lightseagreen
+        );
+      }
+      .empat {
+        background-image: radial-gradient(
+          circle farthest-corner,
+          violet,
+          lightcoral
+        );
+      }
+      .lima {
+        background-image: radial-gradient(
+          circle farthest-side,
+          violet,
+          crimson
+        );
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+    <div class="lima"></div>
+  </body>
 </html>

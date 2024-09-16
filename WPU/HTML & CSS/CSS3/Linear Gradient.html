@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS3 Linear Gradient</title>
+    <style>
+      div {
+        width: 600px;
+        height: 300px;
+        margin: 50px auto;
+        background-image: linear-gradient(red, blue, green);
+      }
+
+      .satu {
+        background-image: linear-gradient(-90deg, red, lightblue);
+      }
+
+      .dua {
+        background-image: linear-gradient(to right, coral, lightseagreen);
+      }
+
+      .tiga {
+        background-image: linear-gradient(to left, lightblue, violet 80%);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+  </body>
 </html>
