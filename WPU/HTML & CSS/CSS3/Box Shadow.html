@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Box Shadow</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: #39b54a;
+        margin: 50px auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        /* box-shadow: <x-offset>px <y-offset>px <blur>px <spread>(optional)px <color> */
+      }
+      .clone {
+        width: 300px;
+        height: 300px;
+        background-color: lightcoral;
+        margin: 50px auto;
+        /* with <spread> property */
+        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+      }
+      .clone2 {
+        width: 300px;
+        height: 300px;
+        background-color: lightpink;
+        margin: 50px auto;
+        /* with <spread> property */
+        box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, 0.75);
+        transition: 0.3s;
+      }
+
+      .clone2:hover {
+        box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.15);
+        margin-top: 40px;
+      }
+      .clone3 {
+        /* <inset> property */
+        width: 300px;
+        height: 300px;
+        background-color: lightseagreen;
+        margin: 50px auto;
+        box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      }
+      .clone4 {
+        /* Multipleshadow */
+        width: 300px;
+        height: 300px;
+        background-color: lightcyan;
+        margin: 50px auto;
+        box-shadow: 6px 6px 10px 5px rgba(0, 0, 255, 0.5),
+          -6px -6px 10px 5px rgba(255, 0, 0, 0.5);
+      }
+      .clone5 {
+        width: 300px;
+        height: 300px;
+        background-color: linen;
+        margin: 50px auto;
+        box-shadow: 0px 0px 0px 5px red, 0px 0px 0px 10px blue,
+          0px 0px 0px 15px green;
+        border-radius: 25%;
+        text-align: center;
+        line-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div class="clone"></div>
+    <div class="clone2"></div>
+    <div class="clone3"></div>
+    <div class="clone4"></div>
+    <div class="clone5">There's no border here</div>
+  </body>
+</html>
