@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Font Face</title>
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Dari Google Font */
+      /* Dengan google font tidak perlu khawatir jika user atau client tidak */
+      /* memiliki font tertentu di devicenya, karena diambil dari server google */
+      /* <uniquifier>: Use a unique and descriptive class name
+       <weight>: Use a value from 100 to 900 */
+
+      .montserrat-regular {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+      }
+      /* download font sendiri dari internet (Perhatikan license juga) */
+      @font-face {
+        font-family: "Source Sans Pro";
+        src: url(asset/source-sans-pro/SourceSansPro-Regular.otf);
+      }
+
+      /* Kadang ada font yang sudah menyediakan syntax font-face css nya */
+      @font-face {
+        font-family: "open_sansregular";
+        src: url("./asset/OpenSans-Regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* Webfont Kit */
+      h1 {
+        font-size: 100px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        /* font-family: "open_sansregular", "Trebuchet MS", arial, sans-serif; */
+        /* font-family: "Source Sans Pro", "Trebuchet MS", arial, sans-serif; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+</html>
