@@ -4,6 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS3 Transition</title>
+    <style>
+      .container {
+        height: auto;
+        width: 1000px;
+        border: 5px solid black;
+        margin: 25px auto;
+      }
+
+      .kotak {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        transition: all 2s;
+        /* transition: [property] <durasi> [fungsi] [delay] */
+      }
+
+      .kotak1 {
+        background-color: lightcoral;
+      }
+
+      .kotak2 {
+        background-color: violet;
+      }
+
+      .kotak3 {
+        background-color: aquamarine;
+        transition: all 2s ease;
+      }
+
+      .kotak4 {
+        background-color: cadetblue;
+        transition: all 2s ease-in;
+      }
+      .kotak5 {
+        background-color: crimson;
+        transition: all 2s ease-out;
+      }
+      .kotak6 {
+        background-color: lightblue;
+        transition: all 2s ease-in-out;
+      }
+      .kotak7 {
+        background-color: gold;
+        transition: all 2s linear;
+      }
+
+      .kotak8 {
+        background-color: brown;
+        transition: all 2s cubic-bezier(0.95, 0.05, 0.8, 0.04);
+        /* Cubic-Bezier bisa diedit lewat inspect browser, lalu dicopy ke styling css */
+      }
+
+      .kotak9 {
+        background-color: cyan;
+        transition: all 2s 1s;
+      }
+
+      .kotak10 {
+        background-color: cornflowerblue;
+        font-size: 10px;
+        transition: margin-left 3s, transform 3s 2s, background-color 500ms 3s;
+      }
+
+      .container:hover .kotak {
+        margin-left: 900px;
+        transform: rotate(720deg);
+        background-color: pink;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="kotak kotak1"></div>
+      <div class="kotak kotak2"></div>
+      <div class="kotak kotak3">Ease</div>
+      <div class="kotak kotak4">Ease-in</div>
+      <div class="kotak kotak5">Ease-out</div>
+      <div class="kotak kotak6">Ease-in-out</div>
+      <div class="kotak kotak7">Linear</div>
+      <div class="kotak kotak8">Cubic-Bezier</div>
+      <div class="kotak kotak9">Delayed</div>
+      <div class="kotak kotak10">Multiple Transition</div>
+    </div>
+  </body>
 </html>
