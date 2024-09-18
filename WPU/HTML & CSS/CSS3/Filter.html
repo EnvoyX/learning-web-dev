@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Filter</title>
+    <style>
+      /* Filter
+
+                blur (px)
+
+                brightness (angka / %)
+
+                contrast (angka / %)
+
+                saturate (angka / %)
+
+                grayscale (angka / %)        
+
+                sepia (angka / %)        
+
+                hue-rotate (adeg)        
+
+                invert (angka / %)        
+
+                opacity (angka / %)        
+
+                drop-shadow (sama seperti box-shadow)
+
+*/
+      h2 {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.4));
+      }
+      img {
+        display: block;
+        height: auto;
+        width: 700px;
+        margin: 50px auto;
+        filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.5));
+        /* Filter drop-shadow bisa digunakan pada objek gambar yang tidak transparan */
+        /* tidak seperti box shadow yang hanya memberikan banyangan pada kotak gambar */
+        filter: saturate(120%);
+      }
+      .fritz {
+        filter: blur(10px) grayscale(1);
+        transition: 0.5s;
+      }
+      .fritz:hover {
+        filter: blur(0px) grayscale(0);
+      }
+      .persona3 {
+        filter: blur(10px) grayscale(1);
+        transition: 0.5s;
+      }
+
+      .persona3:hover {
+        filter: blur(0px) grayscale(0);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Photography</h2>
+    <img class="fritz" src="./asset/IMG_0241.JPG" alt="" />
+    <img class="persona3" src="./asset/1328230.png" alt="" />
+  </body>
+</html>

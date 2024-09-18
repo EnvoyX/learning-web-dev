@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Transform</title>
+    <style>
+      /*	
+      CSS3 Transform
+		scale (angka), scaleX (angka), scaleY(angka) 
+
+		rotate (deg), rotateX (deg), rotateY(deg) 
+
+		skew(deg), skewX (deg), skewY (deg) 
+
+		translate(px), translateX(px), translateY(px)	
+
+		*/
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+      }
+      .kotak {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto 0;
+        background-color: lightpink;
+        transition: 0.5s;
+      }
+
+      .kotak:hover {
+        transform: scale(1.5, 2);
+        /* transform: scale(0.5); */
+      }
+
+      .one {
+        background-color: lightcoral;
+        transition: 0.7s;
+      }
+
+      .one:hover {
+        transform: rotate(45deg);
+        /* transform: rotateX(180deg); */
+        /* transform: rotateY(180deg); */
+      }
+
+      .two {
+        background-color: lightseagreen;
+        transition: 0.5s;
+      }
+
+      .two:hover {
+        transform: skew(-45deg);
+      }
+
+      .three {
+        background-color: lightgreen;
+        transition: 0.5s;
+      }
+
+      .three:hover {
+        transform: translateX(0px) translateY(-50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate,
+      ut qui ipsum reprehenderit architecto facilis fuga ab vitae. Doloremque,
+      libero? Cupiditate maxime sit dignissimos, in, voluptas necessitatibus
+      quasi natus deserunt consectetur debitis quam, quae tempore nobis saepe
+      libero fugiat quibusdam commodi? Molestias repellat ut nesciunt
+      praesentium a numquam ducimus!
+    </p>
+  </body>
+</html>
