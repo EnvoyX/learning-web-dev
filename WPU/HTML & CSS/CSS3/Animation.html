@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Animation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 2000px;
+      }
+      .kotak {
+        height: 200px;
+        width: 200px;
+        background-color: darkorange;
+        margin: 20px auto;
+        /*Animation [name] [duration] [timing-function] [delay] [iteration-count]
+ [direction] [fill-mode] [play-state] */
+      }
+
+      .kotak2 {
+        /* property iteration-count */
+        background-color: aquamarine;
+        animation: RotateAnimation 1s ease-in-out infinite;
+      }
+
+      .kotak3 {
+        /* property direction */
+        background-color: lightblue;
+        animation: SquareAnimation 2s ease 2 alternate;
+      }
+
+      .kotak4 {
+        /* property fill-mode */
+        background-color: lightcoral;
+        animation: EnlargeAnimation 2s ease 1 4s normal forwards;
+      }
+
+      .kotak1:hover {
+        animation: SquareAnimation2 1s ease;
+      }
+
+      @keyframes EnlargeAnimation {
+        0% {
+          width: 200px;
+          height: 200px;
+        }
+
+        25% {
+          width: 300px;
+          height: 200px;
+        }
+
+        50% {
+          width: 300px;
+          height: 300px;
+        }
+
+        100% {
+          width: 400px;
+          height: 400px;
+        }
+      }
+
+      @keyframes RotateAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        /* 25% {
+          transform: rotate(90deg);
+        }
+
+        50% {
+          transform: rotate(180deg);
+        }
+
+        75% {
+          transform: rotate(270deg);
+        } */
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes SquareAnimation {
+        0% {
+          margin: 20px auto;
+        }
+
+        50% {
+          width: 300px;
+          height: 300px;
+        }
+
+        100% {
+          margin: 125px auto;
+          width: 200px;
+          height: 200px;
+        }
+      }
+      @keyframes SquareAnimation2 {
+        0% {
+          width: 200px;
+        }
+
+        50% {
+          width: 500px;
+          height: 200px;
+        }
+
+        100% {
+          width: 500px;
+          height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak kotak1"></div>
+    <div class="kotak kotak2"></div>
+    <div class="kotak kotak3"></div>
+    <div class="kotak kotak4"></div>
+  </body>
+</html>
