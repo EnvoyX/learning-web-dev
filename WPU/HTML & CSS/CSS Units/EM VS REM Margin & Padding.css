@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+
+html {
+  font-size: 28px;
+}
+
+body {
+  color: #34517f;
+  margin: 3em auto;
+  text-align: center;
+  background: linear-gradient(to left, #c2e59c, #64b3f4);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  font-size: 0.8rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  /* Padding dengan ukuruan EM akan menyesuaikan */
+  /* Ukuran font yang ada dielemen yang sama atau diatasnya */
+  padding: 1em 3em;
+}
+
+.btn-sm {
+  font-size: 0.5em;
+}

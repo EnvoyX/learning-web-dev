@@ -1,24 +1,33 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:300,700");
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
 
 html {
-  font-size: 16px;
+  font-size: 28px;
 }
 
-@media (min-width: 700px) {
+/* Bisa gunakan selector :root buat REM */
+/* :root{
+
+} */
+
+/* @media (min-width: 700px) {
   html {
     font-size: 25px;
   }
-}
+} */
 
 body {
   color: #34517f;
   margin: 3em auto;
   text-align: center;
   background: linear-gradient(to left, #c2e59c, #64b3f4);
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 1em;
   line-height: 1.6;
+}
+
+.heading {
+  font-size: 4rem;
 }
 
 .subhead {
@@ -27,7 +36,7 @@ body {
 }
 
 .subhead::after {
-  content: "";
+  content: '';
   display: block;
   height: 1px;
   background: #34517f;
@@ -55,14 +64,15 @@ body {
 }
 
 .col--em {
+  font-size: 16px;
 }
 
 .col--em h1 {
-  font-size: 2.5em;
+  font-size: 7em;
 }
 
 .col--em p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 /* ============
@@ -73,7 +83,7 @@ body {
 }
 
 .col--rem h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .col--rem p {
