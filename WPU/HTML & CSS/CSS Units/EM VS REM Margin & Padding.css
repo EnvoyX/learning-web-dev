@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
 
 html {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 body {
@@ -27,6 +27,10 @@ a {
   font-size: 0.8rem;
 }
 
+.length {
+  font-size: 16px;
+}
+
 .btn {
   text-decoration: none;
   color: white;
@@ -38,8 +42,13 @@ a {
   /* Padding dengan ukuruan EM akan menyesuaikan */
   /* Ukuran font yang ada dielemen yang sama atau diatasnya */
   padding: 1em 3em;
+  margin: 0 1rem;
 }
 
 .btn-sm {
   font-size: 0.5em;
+}
+
+.btn-lrg {
+  font-size: 2em;
 }
