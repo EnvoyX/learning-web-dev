@@ -1,0 +1,171 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #ddd;
+  padding-bottom: 1000px;
+  line-height: 1.65;
+}
+
+/* Latihan 1 */
+.container-satu {
+  width: 800px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan 2 */
+
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.service {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.service-satu {
+  background-color: lightcoral;
+}
+
+.service-dua {
+  background-color: lightblue;
+}
+
+.service-tiga {
+  background-color: lightseagreen;
+}
+
+/* Latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #aaa;
+  background-color: #eee;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Latihan 5 */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 50px auto;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  color: white;
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+/* Responsive */
+
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-empat {
+    display: flex;
+    flex: 1;
+  }
+
+  .card-large {
+    transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    -moz-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    -o-transform: scale(1.12);
+  }
+
+  .service {
+    width: 30%;
+  }
+
+  .thumbnail {
+    width: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    margin-bottom: 30px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+}
