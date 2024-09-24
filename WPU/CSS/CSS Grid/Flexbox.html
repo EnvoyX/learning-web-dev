@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .container {
+        box-sizing: border-box;
+        width: 600px;
+        margin: 50px auto;
+        border: 5px solid #333;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+
+      header {
+        background-color: #b063db;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      .sidebar {
+        flex: 1;
+      }
+
+      .sidebar nav {
+        background-color: #e45765;
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sidebar aside {
+        background-color: #2f93ff;
+        padding: 60px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        background-color: #e0aa77;
+        padding: 177.5px 0;
+        box-sizing: border-box;
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        background-color: #666;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <div class="content">
+        <div class="sidebar">
+          <aside>Aside</aside>
+          <nav>Nav</nav>
+        </div>
+        <main>Main</main>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

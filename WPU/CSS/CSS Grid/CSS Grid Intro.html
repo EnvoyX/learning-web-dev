@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .container {
+        box-sizing: border-box;
+        width: 600px;
+        margin: 50px auto;
+        border: 5px solid #333;
+        box-sizing: border-box;
+        padding: 5px;
+        text-align: center;
+        display: grid;
+        grid-template-areas:
+          'header  header'
+          'aside main'
+          'nav main'
+          'footer footer';
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 0.65fr 1fr 1.3fr;
+      }
+
+      header {
+        grid-area: header;
+        background-color: #b063db;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav {
+        grid-area: nav;
+        background-color: #e45765;
+        padding: 100px 0;
+      }
+
+      aside {
+        grid-area: aside;
+        background-color: #2f93ff;
+        padding: 60px 0;
+      }
+
+      main {
+        grid-area: main;
+        background-color: #e0aa77;
+        box-sizing: border-box;
+        padding: 177.5px 0;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: #666;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <aside>Aside</aside>
+      <nav>Nav</nav>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
