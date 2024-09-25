@@ -10,13 +10,66 @@
         margin: 0;
         padding: 0;
         background-color: #ddd;
+        height: 2000px;
       }
-
+      /* Latihan Satu */
       .container {
         width: 60%;
         margin: 50px auto;
         display: grid;
+        grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr);
+      }
+
+      .container-2 {
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
         grid-template-columns: repeat(9, 1fr);
+      }
+
+      /* Latihan Dua */
+      .container-3 {
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr min-content max-content;
+      }
+
+      /* Latihan Tiga*/
+      .container-4 {
+        border: 2px solid orange;
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        /* Untuk mengisi secara auto berdasarkan ukuran grid yang terbentuk dari viewport */
+        /* Grid nya akan berakhir pada tempat kosong yang muat terhadap elemen nya */
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+      .container-5 {
+        border: 2px solid orange;
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        /* Untuk mengisi secara auto berdasarkan ukuran grid yang terbentuk dari viewport */
+        /* Grid nya akan berakhir pada tempat kosong yang muat terhadap elemen nya */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      .container-6 {
+        border: 2px solid orange;
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        /* auto-fit akan mengakhiri grid nya pada elemen terakhir */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      /* Latihan 4 */
+      .container-7 {
+        border: 2px solid orange;
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
       }
 
       .item {
@@ -34,6 +87,68 @@
 
   <body>
     <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <div class="container-2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <div class="container-3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+        voluptas!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+        minus!
+      </div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+    <div class="container-4">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+    </div>
+    <div class="container-5">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+    </div>
+    <div class="container-6">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+    <div class="container-7">
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
