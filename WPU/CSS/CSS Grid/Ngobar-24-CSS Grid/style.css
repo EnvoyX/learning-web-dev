@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Montserrat";
+  margin: 50px;
+  background-color: #ddd;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-areas:
+    "hero hero feature-1"
+    "hero hero feature-2";
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url(./img/1335668.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 500px;
+  padding: 50px;
+}
+
+/* .hero > * {
+  display: none;
+} */
+
+.features {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.feature-1 {
+  color: white;
+  grid-area: feature-1;
+  background-image: url(./img/alan-wake-2-video-game-4k-wallpaper-uhdpaper.com-264@1@m.jpg);
+  background-size: cover;
+}
+
+.feature-2 {
+  color: white;
+  grid-area: feature-2;
+  background-image: url(./img/alan-wake-2-4k-wallpaper-uhdpaper.com-811@1@e.jpg);
+  background-size: cover;
+}
+
+.genre {
+  font-size: 2em;
+}
+
+.sequel {
+  font-size: 2em;
+}
