@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Bootstrap 5 (update baru 1.2)</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      /* CSS Boostrap Variable */
+      .ungu {
+        background-color: var(--bs-purple);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cotainer mt-5 mb-5">
+      <h1>Hello, Bootstrap 5.3 (or newer)!</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio,
+        ratione. Aliquid commodi, dolorem cum incidunt culpa cumque suscipit
+        reiciendis minima accusantium modi eum rem nostrum vero quaerat
+        possimus! Molestiae delectus libero architecto repellat error ut
+        consequatur porro assumenda. Eum totam culpa a molestias qui provident
+        vero nulla velit perferendis at.
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Ku1zqLj_be4?si=XbT_cYVnezsqkIog"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <button
+        class="btn"
+        style="
+          background-color: var(--bs-dark-text-emphasis);
+          color: var(--bs-body-bg);
+        "
+      >
+        Halo
+      </button>
+    </div>
+    <div class="container-1">
+      <button class="btn btn-primary ungu">Click Me!</button>
+      <span class="badge text-bg-secondary">Sebuah Tulisan</span>
+      <button class="btn btn-warning">Save!</button>
+      <span class="badge bg-warning text-dark">Sebuah Text</span>
+      <div class="tombol border border-danger rounded">Sebuah Kotak</div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        Toggle right offcanvas
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Offcanvas right
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">...</div>
+      </div>
+      <button
+        class="btn btn-primary d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasResponsive"
+        aria-controls="offcanvasResponsive"
+      >
+        Toggle left offcanvas
+      </button>
+
+      <div class="alert alert-info d-none d-lg-block">
+        Resize your browser to show the responsive offcanvas toggle.
+      </div>
+
+      <div
+        class="offcanvas-lg offcanvas-start"
+        tabindex="-1"
+        id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">
+            Responsive offcanvas
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            data-bs-target="#offcanvasResponsive"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="mb-0">
+            This is content within an <code>.offcanvas-lg</code>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
