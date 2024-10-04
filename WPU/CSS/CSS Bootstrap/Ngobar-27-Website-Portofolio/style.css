@@ -1,0 +1,24 @@
+section#project {
+  background-color: #e2edff;
+}
+
+/* section#project img {
+  height: auto;
+  width: 600px;
+} */
+.jumbotron {
+  background-color: var(--bs-body-bg);
+  padding-top: 6rem;
+}
+
+.jumbotron h1 {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 5rem;
+}
