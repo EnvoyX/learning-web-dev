@@ -4,16 +4,17 @@
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
+/* CSS Var */
 
 body {
   font-size: 1.2rem;
-  font-family: 'Montserrat', system-ui;
+  font-family: "Montserrat", system-ui;
   font-style: normal;
   font-optical-sizing: auto;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +37,7 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Qwitcher Grypen', cursive, system-ui;
+  font-family: "Qwitcher Grypen", cursive, system-ui;
   font-style: normal;
   font-size: 6rem;
 }
@@ -52,9 +53,44 @@ body {
 .hero a {
   color: var(--pink);
   background-color: white;
+  box-shadow: var(--shadow);
 }
 
 .hero a:hover {
   color: white;
   background-color: var(--pink);
+}
+
+/* Rensponsive Breakpoint */
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+}
+/* Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 3px;
+  }
 }
