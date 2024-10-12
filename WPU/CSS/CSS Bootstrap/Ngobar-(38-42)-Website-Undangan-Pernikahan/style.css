@@ -8,14 +8,14 @@
 
 body {
   font-size: 1.2rem;
-  font-family: "Montserrat", system-ui;
+  font-family: 'Montserrat', system-ui;
   font-style: normal;
   font-optical-sizing: auto;
   min-height: 4000px;
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -40,7 +40,7 @@ body {
 }
 
 .hero h1 {
-  font-family: "Qwitcher Grypen", cursive, system-ui;
+  font-family: 'Qwitcher Grypen', cursive, system-ui;
   font-style: normal;
   font-size: 6rem;
 }
@@ -75,7 +75,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: "Qwitcher Grypen", cursive, system-ui;
+  font-family: 'Qwitcher Grypen', cursive, system-ui;
   font-size: 3.5rem;
   font-weight: bold;
 }
@@ -129,7 +129,7 @@ body {
   color: var(--pink);
   font-size: 6rem;
   font-weight: bold;
-  font-family: "Sacramento", cursive;
+  font-family: 'Sacramento', cursive;
 }
 
 .home h3 {
@@ -149,7 +149,7 @@ body {
 
 .home .couple h3 {
   color: var(--pink);
-  font-family: "Sacramento", cursive;
+  font-family: 'Sacramento', cursive;
   font-style: normal;
   font-size: 3.2rem;
 }
@@ -178,6 +178,56 @@ body {
   margin: auto;
   color: var(--pink);
 }
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info h2 {
+  font-family: 'Sacramento', cursive;
+  color: var(--pink);
+  font-size: 5rem;
+}
+
+.info .alamat {
+  font-size: 1rem;
+}
+
+.info .description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.info a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.info a:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border: 1px solid #999;
+}
+.info .card-footer {
+  border: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
 /* Rensponsive Breakpoint */
 
 /* Extra lg */
@@ -220,6 +270,10 @@ body {
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
   }
 }
 /* Phone -sm- */
