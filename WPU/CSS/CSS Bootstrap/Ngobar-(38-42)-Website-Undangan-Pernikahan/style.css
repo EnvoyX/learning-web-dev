@@ -413,8 +413,40 @@ footer a:hover {
   color: white;
 }
 
-.audio-icon-wrapper{
-  
+.audio-icon-wrapper {
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  color: white;
+  mix-blend-mode: difference;
+  opacity: 0.5;
+  animation: rotating 4s linear infinite;
+  -webkit-animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
 /* Rensponsive Breakpoint */
