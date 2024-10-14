@@ -53,12 +53,12 @@
       id="hero"
     >
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara,</h4>
+        <h4>To our Honored Guest, <span></span></h4>
         <h1>Boothil & Navia</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a class="btn btn-lg mt-4" href="#undangan" onclick="enableScroll()"
-          >Lihat Undangan</a
+        <a class="btn btn-lg mt-4" href="#home" onclick="enableScroll()"
+          >View Invitation</a
         >
       </main>
     </section>
@@ -110,7 +110,7 @@
     <section id="home" class="home">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          <h2>Acara Pernikahan</h2>
+          <h2>Wedding Event</h2>
           <h3>
             Diselenggarakan pada 20 Novemeber 2024 di Bandung, Jawa Barat.
           </h3>
@@ -175,11 +175,22 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
+            <h2>Information Center</h2>
             <p class="alamat">
               Alamat: Gedung Kologdam, Kodiklat TNI AD. <br />
               Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung
             </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.839977636171!2d107.6142891!3d-6.9097296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e635c9284fc1%3A0x268bddf9bd0971c0!2sKologdam!5e0!3m2!1sen!2sid!4v1728884463867!5m2!1sen!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
             <a
               href="https://maps.app.goo.gl/Pavj1fpt7W2TtwhU7"
               target="_blank"
@@ -460,8 +471,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
-            <p>Isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
+            <h2>Confrim Your Attendance</h2>
+            <p>Please fill this form if you plan to attend this wedding.</p>
           </div>
         </div>
         <form
@@ -512,6 +523,36 @@
             <button class="btn btn-primary">Submit</button>
           </div>
         </form>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://envoy-website.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
       </div>
     </section>
     <!-- RSVP -->
@@ -612,7 +653,7 @@
     ></script>
     <!-- Simply Countdown -->
     <script>
-      simplyCountdown('.simply-countdown', {
+      simplyCountdown(".simply-countdown", {
         year: 2024, // required
         month: 11, // required
         day: 20, // required
@@ -621,14 +662,14 @@
         seconds: 0, // Default is 0 [0-59] integer
         words: {
           //words displayed into the countdown
-          days: { singular: 'day', plural: 'days' },
-          hours: { singular: 'hour', plural: 'hours' },
-          minutes: { singular: 'minute', plural: 'minutes' },
-          seconds: { singular: 'second', plural: 'seconds' },
+          days: { singular: "day", plural: "days" },
+          hours: { singular: "hour", plural: "hours" },
+          minutes: { singular: "minute", plural: "minutes" },
+          seconds: { singular: "second", plural: "seconds" },
         },
         plural: true, //use plurals
         inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
-        inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
+        inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
         // in case of inline set to false
         enableUtc: false,
         onEnd: function () {
@@ -636,9 +677,9 @@
           return;
         },
         refresh: 1000, //default refresh every 1s
-        sectionClass: 'simply-section', //section css class
-        amountClass: 'simply-amount', // amount css class
-        wordClass: 'simply-word', // word css class
+        sectionClass: "simply-section", //section css class
+        amountClass: "simply-amount", // amount css class
+        wordClass: "simply-word", // word css class
         zeroPad: false,
         countUp: false, // enable count up if set to true
       });

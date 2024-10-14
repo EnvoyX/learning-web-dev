@@ -8,14 +8,14 @@
 
 body {
   font-size: 1.2rem;
-  font-family: 'Montserrat', system-ui;
+  font-family: "Montserrat", system-ui;
   font-style: normal;
   font-optical-sizing: auto;
   min-height: 4000px;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -40,7 +40,7 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Qwitcher Grypen', cursive, system-ui;
+  font-family: "Qwitcher Grypen", cursive, system-ui;
   font-style: normal;
   font-size: 6rem;
 }
@@ -52,7 +52,7 @@ body {
 .rsvp h2,
 .gifts h2 {
   color: var(--pink);
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 5rem;
   font-weight: bold;
 }
@@ -87,7 +87,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Qwitcher Grypen', cursive, system-ui;
+  font-family: "Qwitcher Grypen", cursive, system-ui;
   font-size: 3.5rem;
   font-weight: bold;
 }
@@ -154,7 +154,7 @@ body {
 
 .home .couple h3 {
   color: var(--pink);
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-style: normal;
   font-size: 3.2rem;
 }
@@ -261,7 +261,7 @@ body {
   position: relative;
 }
 .timeline::before {
-  content: '';
+  content: "";
   top: 0;
   bottom: 0;
   position: absolute;
@@ -282,7 +282,7 @@ body {
 
 .timeline li::before,
 .timeline li::after {
-  content: '';
+  content: "";
   display: table;
 }
 .timeline li::after {
@@ -324,7 +324,7 @@ body {
 }
 
 .timeline li .timeline-panel::before {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   border-top: 15px solid transparent;
@@ -336,7 +336,7 @@ body {
 }
 
 .timeline li .timeline-panel::after {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   border-top: 15px solid transparent;
@@ -430,6 +430,7 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   line-height: 0;
+  cursor: pointer;
 }
 
 @keyframes rotating {
