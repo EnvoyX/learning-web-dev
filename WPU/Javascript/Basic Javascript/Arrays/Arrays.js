@@ -29,7 +29,7 @@ for (var i = 0; i < arr5.length; i++) {
   console.log('Mahasiwa Ke- ' + (i + 1) + ': ' + arr5[i]);
 }
 
-//Method in array
+//methods in array
 // 1. join
 // to convert all values within array to string and display it normally with a seperator "," as a default
 // but the seperator can be modified within the parenthesis
@@ -60,3 +60,100 @@ console.log(arr6.join(', '));
 //shift removes element at the start of array (first index key)
 arr6.shift();
 console.log(arr6.join(', '));
+
+// 4. splice
+//  splice(indexStart, totalElementsToBeRemoved, newElement1, newElement2,...);
+// Remove or add new elements that in specified index
+var array = ['Ichigo', 'Uryu', 'Gremmy'];
+array.splice(2, 0, 'Yoruichi', 'Aizen');
+console.log(array.join(', '));
+
+array.splice(3, 2, 'Uruhara', 'Kenpachi', 'Unohana');
+console.log(array.join(', '));
+
+// 5.slice
+// slice(indexStart,indexEnd)
+//slice an array to create a new  array
+var array;
+var newArray = array.slice(0, 4);
+newArray.splice(3, 0, 'Soi Fon', 'Shinji');
+console.log(newArray.join(', '));
+
+// 6.foreach
+var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+angka.forEach(function (e) {
+  console.log(e);
+});
+
+newArray.forEach(function (e, i) {
+  console.log('Character Ke-' + (i + 1) + ': ' + e);
+});
+// 7. map
+newArray.map(function (e, i) {
+  console.log('Character Ke-' + (i + 1) + ': ' + e);
+});
+
+var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+var arrayAngka = angka.map(function (e) {
+  console.log(e);
+  return e;
+});
+
+console.log(arrayAngka.join(', '));
+
+// method map mengembalikan nilai array
+var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+tenfoldedNumbers = angka.map(function (e) {
+  return e * 10;
+});
+
+console.log(tenfoldedNumbers.join(', '));
+
+// 8. sort
+var number = [2, 5, 7, 8, 3, 1, 4, 6, 9];
+number.sort();
+console.log(number.join(', '));
+
+var number = [2, 5, 7, 8, 3, 1, 4, 6, 9, 10, 20];
+number.sort(function (a, b) {
+  return a - b;
+});
+console.log(number.join(', '));
+// sorting algorithm using For loop
+var numbers = [2, 5, 7, 8, 3, 1, 4, 6, 10, 9];
+var temp = 0;
+for (var i = 0; i < numbers.length; i++) {
+  for (var j = 0; j < numbers.length; j++) {
+    if (numbers[j] > numbers[j + 1]) {
+      temp = numbers[j];
+      numbers[j] = numbers[j + 1];
+      numbers[j + 1] = temp;
+    }
+  }
+}
+console.log(numbers);
+
+for (var i = 0; i < numbers.length; i++) {
+  for (var j = 0; j < numbers.length; j++) {
+    if (numbers[j] < numbers[j + 1]) {
+      temp = numbers[j];
+      numbers[j] = numbers[j + 1];
+      numbers[j + 1] = temp;
+    }
+  }
+}
+console.log(numbers);
+//  9.filter
+//memberikan lebih dari satu nilai dalam bentuk array
+arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 50];
+newArrayNumber = arrayNumber.filter(function (x) {
+  return x > 5;
+});
+console.log(newArrayNumber.join(', '));
+// 10. find
+// hanya memberikan satu nilai
+arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 50];
+newArrayNumber = arrayNumber.find(function (x) {
+  return x > 5;
+});
+console.log(newArrayNumber);
