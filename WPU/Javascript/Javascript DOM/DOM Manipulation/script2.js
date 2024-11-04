@@ -1,97 +1,58 @@
-//DOM Manipulation
+// DOM Manipulation
+// Manipulation node
 
-// innerHTML & style Manipulation
+// Study case: add one element tag <p></p> with text inside "Paragraph 1"
+// document.createElement();
+// document.createTextNode();
+// node.appendChild();
+// node.insertBefore();
 
-// changes inner content of element HTML & changes elememt's properties
-// element.innerHTML & element.style.{propertiesCSS}
-const h1 = document.getElementById('judul');
-h1.innerHTML = 'Hanif Hafizhan';
-h1.style.backgroundColor = 'lightblue';
-h1.style.color = 'coral';
+// node.appendChild(newNodeOrElement) --> puts node or element at the end or last order of parent element;
+// create new element
+const newParagraphElement = document.createElement("p");
+const newTextParagraphElement = document.createTextNode(
+  "paragraph 5 (added from javascript)"
+);
 
-const sectionD = document.getElementById('d');
-sectionD.innerHTML =
-  '<div><h1>Westeros</h1><p>this paragraph was changed in JavaScript</p></div>';
-sectionD.style.backgroundColor = 'salmon';
-sectionD.style.color = 'aqua';
+// put the text inside the paragraph element
+newParagraphElement.appendChild(newTextParagraphElement);
 
-const title2 = document.getElementsByTagName('h1')[1];
-title2.style.backgroundColor = 'black';
-title2.style.color = 'white';
+// put the new created element node at the end of section A
+const sectionA = document.getElementById("a");
+sectionA.appendChild(newParagraphElement);
 
-// Attribute Manipulation
+// Another example:
+// node.insertBefore(newNode or Element, targeted Node or Element);
 
-// changes attributes in element html
-// element.getAttribute()
-// element.setAttribute()
-// element.removeAttribute()
-const anchorA = document.getElementsByTagName('a')[0];
-anchorA.innerHTML = 'Instagram Envoy';
-const anchorSandhika = document.getElementsByTagName('a')[1];
-// Examples:
-const p1 = document.querySelector('.p1');
-// .getAttribute("nama attribute")
-// Mendapatkan value dari nama atttribute yang dimasukan sebagai attribute
-p1.getAttribute('class');
-anchorA.getAttribute('href');
+const newListElement = document.createElement("li");
+const newTextListElement = document.createTextNode("new list item");
+newListElement.appendChild(newTextListElement);
 
-//.setAttribute();
-// .setAttribute("nama attribute", "value attribute");
-p1.setAttribute('id', 'paragraph1');
-anchorA.setAttribute('href', 'https://www.instagram.com/nfzhn/');
-anchorA.setAttribute('id', 'link');
+const ul = document.querySelector("section#b ul.list1");
+// side nots: nthchild is first counted in 1 not zero
+const li2 = ul.querySelector("li:nth-child(2)");
+//
+ul.insertBefore(newListElement, li2);
 
-// this method replaces or overwrite the given value in attributes
-// rather add a new one
-const p3 = document.querySelector('.p3');
-p3.setAttribute('class', 'paragrpah3');
-// .removeAttribute("nama attribute")
-anchorSandhika.removeAttribute('href');
+// parentNode.removeChild();
+// parentNode.replaceChild();
 
-// Class Manipulation
+// parentNode.replaceChild(childName);
+const link = document.querySelector("section#a a");
+sectionA.removeChild(link);
 
-const sectionA = document.getElementById('a');
-const sectionB = document.getElementById('b');
-const sectionC = document.getElementById('c');
+// parentNode.replaceChild(newChild, oldChild);
+// get elementes from document
+const sectionB = document.getElementById("b");
+const paragraph4 = document.querySelector("section#b p.paragraph4");
 
-// changes class in element html
-// element.classList
-const p2 = document.querySelector('.p2');
-p2.classList;
+// create new element
+const newTitle = document.createElement("h1");
+const newTitleText = document.createTextNode("Valisthea");
+newTitle.appendChild(newTitleText);
 
-// element.classList.add("className")
-// add more class within defined class or a whole new class
-p2.classList.add('paragraph');
-p2.classList.add('label');
+sectionB.replaceChild(newTitle, paragraph4);
 
-// element.classList.remove("className")
-// remove class
-p2.classList.remove('paragraph');
-
-// element.classList.toggle("className")
-// toggles by giving value true and false that either remove or add the class
-// try toggle it at console
-// returns value of true or false
-sectionA.classList.toggle('light-coral');
-sectionB.classList.toggle('light-salmon');
-sectionC.classList.toggle('light-blue');
-
-// element.classList.item(anyNumber starting from zero)
-// determine nth class in elements
-const p4 = document.querySelector('.p4');
-p4.classList.add('paragraph');
-p4.classList.add('paragraph4');
-p4.classList.add('temporaryClassName');
-p4.classList.item(1);
-p4.classList.item(2);
-
-// element.classList.contains("nameClass")
-// checks whether the elements has the mentioned class from the given argumnents
-// returns value of true or false
-p4.classList.contains('paragraph');
-p4.classList.contains('paragraph5');
-
-// element.classList.replace()
-// element.classList.replace('oldClassName', 'newClassName');
-// overwrite the old class with new class
-p4.classList.replace('temporaryClassName', 'changedWithJavascript');
+newParagraphElement.style.backgroundColor = "lightgreen";
+newListElement.style.backgroundColor = "lightgreen";
+newTitle.style.backgroundColor = "lightgreen";
