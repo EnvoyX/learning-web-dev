@@ -22,7 +22,7 @@ console.log(showName(`Jafar`));
 // Implicit Return
 let tampilNama = (name) => `Hello, ${name}`;
 
-console.log(tampilNama("Soni"));
+console.log(tampilNama('Soni'));
 
 // Two Parameters
 let showData = (name, age) => {
