@@ -22,7 +22,7 @@ console.log(showName(`Jafar`));
 // Implicit Return
 let tampilNama = (name) => `Hello, ${name}`;
 
-console.log(tampilNama('Soni'));
+console.log(tampilNama("Soni"));
 
 // Two Parameters
 let showData = (name, age) => {
@@ -62,7 +62,7 @@ console.table(jumlahHurufNama);
 // Constructor Function
 
 let Mahasiswa = function () {
-  this.name = 'Hanif Hafihzan';
+  this.name = "Hanif Hafihzan";
   this.age = 33;
   // function expression memiliki konsep `this`,
   // sehingga akan mengacu pada lexical scope nya yaitu object Mahasiswa
@@ -82,7 +82,7 @@ hanif.sayHello();
 // Konsep "this" sebetulnya pada arrow function tidak ada
 
 let Student = function () {
-  this.name = 'Hanif Hafihzan';
+  this.name = "Hanif Hafihzan";
   this.age = 33;
 
   // tetapi method dapat dibuat sebagai arrow function di dalam Constructor Function, karena
@@ -126,7 +126,7 @@ const StudentAlcent = {
 StudentAlcent.sayHello();
 
 let Human = function () {
-  this.name = 'Hanif Hafihzan';
+  this.name = "Hanif Hafihzan";
   this.age = 33;
   this.sayHello = function () {
     console.log(
@@ -155,7 +155,72 @@ let Human = function () {
 const aldo = new Human();
 aldo.sayHello();
 
-// intinya :
-// - arrow function tidak memakai konsep this dan variable yang di telusuri akan dicari di lokal parent terdekat
-// - declaration function memakai konsep this tapi, bila variable yang dicari tidak ada dalam localnya maka langsung di telesuri di window
-// - expression function memakai konsep this tapi, bila variable yang dicari tidak dalam local maka, ditelusuri lgi ke lokal parent terdekat
+// Notes:
+
+// Default "this" context
+
+// Arrow functions do not bind their own this, instead,
+// they inherit the one from the parent scope,
+// which is called "lexical scoping".
+// This makes arrow functions to be a great choice in some scenarios but a very bad one in others
+
+// define a function
+const myFunction = () => {
+  console.log(this);
+};
+
+// call it
+myFunction();
+
+// What can we expect this to be?
+// exactly, same as with normal functions, window or global object.
+// Same result but not the same reason.
+// With normal functions the scoped is bound to the global one by default
+//, arrows functions as mentioned before, do not have their own this but they inherit it from the parent scope, in this case the global one.
+
+// Arrow Function as Methods
+
+const myObject = {
+  myMethod: () => {
+    console.log(this);
+  },
+};
+
+myObject.myMethod(); // this === window or global object
+
+const myMethod = myObject.myMethod;
+myMethod(); // this === window or global object
+
+// Weird right? Well, remember, arrow functions don't bind their own scope, but inherit it from the parent one,
+// which in this case is window or the global object.
+
+const myObject2 = {
+  myArrowFunction: null,
+  myMethod: function () {
+    this.myArrowFunction = () => {
+      console.log(this);
+    };
+  },
+};
+
+// We need to call myObject.myMethod() to initialize myObject.myArrowFunction
+// and then let's see what the output would be
+
+myObject2.myMethod(); // this === myObject2
+
+myObject2.myArrowFunction(); // this === myObject2
+
+const myArrowFunction = myObject2.myArrowFunction;
+myArrowFunction(); // this === myObject2
+
+// Clearer now? When we call myObject.myMethod(),
+// we initialize myObject.myArrowFunction with an arrow function which is inside of the method myMethod,
+// so it will inherit its scope. We can clearly see a perfect use case, closures.
+
+// Conclusion
+
+// Arrow functions are a powerful addition to ES6,
+// but we have to be careful and wise when and how to use them
+
+// Arrow functions are the best choice when working with closures or callbacks,
+// but not a good choice when working with class/object methods or constructors.
