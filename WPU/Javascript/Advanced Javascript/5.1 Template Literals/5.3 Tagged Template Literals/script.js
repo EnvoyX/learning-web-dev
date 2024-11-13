@@ -36,6 +36,7 @@ function cobaTag(strings, ...args) {
   // return result;
 
   // Method 2
+  return strings.reduce(
     (result, string, i) => `${result} ${string} ${args[i] || ``}`,
     ``
   );
