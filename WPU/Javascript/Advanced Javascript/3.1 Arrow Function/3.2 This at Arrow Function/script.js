@@ -143,6 +143,8 @@ let Human = function () {
 
   // Solusi nya dengan menggunakan arrow function, karena arrow function tidak mengenal konsep `this`
   // sehingga akan mencari variable yang ada `this` nya, dalam kasus ini `this.age`
+  // Arrow function akan mencari `this` di sekitar nya, yaitu di lexical scope nya atau local parent terdekat
+  // jika tidak ada akan mencari ke global
   setInterval(() => {
     if (this.age == 50 + 1) return clearInterval();
     console.log(this.age++);
