@@ -78,15 +78,16 @@ const hanif = new Mahasiswa();
 hanif.sayHello();
 
 // Arrow Function
-// tidak semua function bisa dijadikan langsung ke arrow function
+// tidak semua function bisa dijadikan langsung ke arrow function, contoh nya Constructor Function
+// Konsep "this" sebetulnya pada arrow function tidak ada
 
 let Student = function () {
   this.name = 'Hanif Hafihzan';
   this.age = 33;
 
-  // tetapi method dapat dibuat sebagai arrow function,
-  // arrow function yang dibuat dalam expression (diassign ke variable) masih bisa bekerja
-  // apabila dibuat didalam Constructor Function juga
+  // tetapi method dapat dibuat sebagai arrow function di dalam Constructor Function, karena
+  // Arrow function masih bisa menemukan variable `this` didalamnya
+  // contohnya `this.name` dan `this.age`, jika tidak menemukannya di lexical scope, dia akan mencari ke local parent terdekat
   this.sayHello = () => {
     console.log(
       `Hello, my name is ${this.name} and I am ${this.age} years old.`
@@ -100,20 +101,20 @@ hanifH.sayHello();
 
 // Object Literal
 // Arrow Function akan berprilaku berbeda jika object nya dibuat dengan Object Literal
-// Konsep "this" sebetulnya pada arrow function tidak ada
 
 const StudentAlcent = {
   name: `Andi Jafar`,
   age: 24,
   sayHello: function () {
-    // Jika menggunakan function biasa maka this-nya akan mencari ke lexical scope
+    // `this` masih berlaku dalam function declaration, maka `this` nya mengacu pada object StudentAlcent
     console.log(
       `Hello, my name is ${this.name} and I am ${this.age} years old.`
     );
   },
   // Arrow function tidak akan bekerja jika ada di dalam function nya ada menggunakan konsep 'this'
-  // apabila dibuat dengan Object Literal. `this` nya mengacu pada object global 'Window' alhasil menghasilkan undefined
-  // dan juga kasus ini function dibuat secara declaration
+  // apabila dibuat dengan Object Literal. `this` nya mengacu pada object global 'Window' dikarenakan,
+  // arrow function tidak menemukan variable yang ada `this` nya di dalam Object Literal.
+  // sehingga arrow function tidak bisa menemukan `this.name` dan `this.age` di dalam object StudentAlcent
 
   // sayAnjay: () => {
   //   console.log(
@@ -141,8 +142,7 @@ let Human = function () {
   // }, 500);
 
   // Solusi nya dengan menggunakan arrow function, karena arrow function tidak mengenal konsep `this`
-  // sehingga `this` yang awalnya mengacu akan pada Global (window) akibat hoisting,
-  // tapi karena arrow function, `this` nya akan mengacu pada lexical scope nya yaitu di dalam object Human.
+  // sehingga akan mencari variable yang ada `this` nya, dalam kasus ini `this.age`
   setInterval(() => {
     if (this.age == 50 + 1) return clearInterval();
     console.log(this.age++);
@@ -154,6 +154,6 @@ const aldo = new Human();
 aldo.sayHello();
 
 // intinya :
-// - arrow function tidak memakai konsep this dan variable akan di telusuri lagi di lokal parent terdekat
+// - arrow function tidak memakai konsep this dan variable yang di telusuri akan dicari di lokal parent terdekat
 // - declaration function memakai konsep this tapi, bila variable yang dicari tidak ada dalam localnya maka langsung di telesuri di window
 // - expression function memakai konsep this tapi, bila variable yang dicari tidak dalam local maka, ditelusuri lgi ke lokal parent terdekat
