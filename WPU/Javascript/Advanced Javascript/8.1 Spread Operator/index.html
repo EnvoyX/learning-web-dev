@@ -4,8 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8.1 Spread Operator</title>
+    <style>
+      body {
+        background-color: salmon;
+        text-align: center;
+      }
+
+      .name {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-size: 80px;
+        color: white;
+        transition: 0.6s;
+      }
+
+      h1.name span {
+        display: inline-block;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      h1.name span:hover {
+        transform: scale(2) translateY(-10px);
+      }
+    </style>
   </head>
   <body>
+    <h1 class="name">Aerith</h1>
+    <ul>
+      <li>Akmal</li>
+      <li>Doddy</li>
+      <li>Nino</li>
+    </ul>
     <script src="./script.js"></script>
   </body>
 </html>
