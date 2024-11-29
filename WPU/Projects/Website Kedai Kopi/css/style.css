@@ -447,6 +447,11 @@ body {
   fill: var(--primary);
 }
 
+/* Star fill */
+/* .star-full {
+  fill: var(--primary);
+} */
+
 .products .product-price {
   font-size: 1.3rem;
   font-weight: bold;
@@ -583,6 +588,12 @@ footer .credit a {
   -o-border-radius: 10%;
 }
 
+.modal-content .product-price span {
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 .modal-content p {
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -598,6 +609,10 @@ footer .credit a {
   width: 12rem;
   padding: 1.1rem 1.6rem;
   margin-top: 1rem;
+}
+
+.modal-content .product-stars .star-full {
+  fill: burlywood;
 }
 
 /* Modal Animation */
