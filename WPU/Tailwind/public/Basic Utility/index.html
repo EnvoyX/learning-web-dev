@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Utility Tailwind CSS</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      * {
+        border: 1px solid red;
+      }
+    </style>
   </head>
   <body>
     <h1 class="text-6xl">Tailwind CSS</h1>
+    <section class="mb-10">
+      <h2>Spacing</h2>
+      <div class="m-5 mb-8">Margin</div>
+      <div class="p-8">Padding</div>
+    </section>
+    <section class="w-1/2">
+      <h2>Sizing</h2>
+      <div class="w-16">Kotak 1</div>
+      <div class="w-1/2">Kotak 2</div>
+      <div class="w-32 h-32">Kotak 3</div>
+      <div class="max-w-lg min-h-screen">Kotak 4</div>
+    </section>
   </body>
 </html>
