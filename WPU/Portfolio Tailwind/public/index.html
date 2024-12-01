@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,8 +27,19 @@
                   <li class="group"><a href="#portfolio" class="transition duration-200 ease-linear text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:font-bold">Portfolio</a></li>
                   <li class="group"><a href="#clients" class="transition duration-200 ease-linear text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:font-bold">Clients</a></li>
                   <li class="group"><a href="#Blog" class="transition duration-200 ease-linear text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:font-bold">Blog</a></li>
-                 
                   <li class="group"><a href="#contact" class="transition duration-200 ease-linear text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:font-bold">Contact</a></li>
+                  <li class="flex items-center pl-8">
+                    <div class="flex">
+                      <span class="mr-2 text-sm text-slate-500">Light</span>
+                      <input type="checkbox" class="hidden" id="dark-toggle">
+                      <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                          <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                      </label>
+                      <span class="ml-2 text-sm text-slate-500">Dark</span>
+                    </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -377,6 +388,11 @@
             </div>
           </footer>
           <!-- Footer -->
+           <!-- Back to Top Button -->
+            <a href="#home" id="backToTopBtn" class="fixed bottom-4 right-4 z-[9999] h-14 w-14 bg-primary hidden justify-center items-center rounded-full p-4 hover:animate-pulse">
+              <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+            </a>
+           <!-- Back to Top Button -->
       <script src="../dist/js/script.js"></script>
   </body>
 </html>
