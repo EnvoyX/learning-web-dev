@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Counter React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      function MyHomePage() {
+        const [counter, setCounter] = React.useState(0);
+        function increment() {
+          setCounter(counter + 1);
+        }
+        function decrement() {
+          setCounter(counter - 1);
+        }
+        function reset() {
+          setCounter(0);
+        }
+        return (
+          <div>
+            <p>Simple Counter</p>
+            <div>
+              <MyButton text={"-"} onClick={decrement} counter={counter} />
+              <MyCounter counter={counter} />
+              <MyButton text={"+"} onClick={increment} counter={counter} />
+              <MyButton text={"Reset!"} onClick={reset} counter={counter} />
+            </div>
+          </div>
+        );
+      }
+      function MyButton({ text, counter, onClick }) {
+        const myStyle =
+          text !== "Reset!" ? { margin: 10 } : { margin: 20, display: "block" };
+
+        return (
+          <button style={myStyle} onClick={onClick}>
+            {text}
+          </button>
+        );
+      }
+
+      function MyCounter({ counter }) {
+        return <span style={{ margin: "20" }}>{counter}</span>;
+      }
+
+      root.render(<MyHomePage />);
+    </script>
+  </body>
+</html>
