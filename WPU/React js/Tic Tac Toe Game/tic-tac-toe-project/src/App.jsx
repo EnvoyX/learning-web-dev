@@ -8,7 +8,10 @@ function Game() {
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove];
+  console.log(`Square Sekarang:`);
   console.log(currentSquares);
+  console.log(`History Sekarang:`);
+  console.log(history);
 
   /** @type {*}
    * History Visualization
@@ -19,6 +22,8 @@ function Game() {
    */
   function handlePlay(nextSquares) {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+    console.log(`Next History:`);
+    console.log(nextHistory);
     setHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
   }
